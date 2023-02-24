@@ -2,7 +2,6 @@ FROM public.ecr.aws/docker/library/golang:1.19
 RUN apt-get update && apt-get install -y jq
 WORKDIR /app
 COPY ./go-libp2p-relay-daemon ./
-COPY ./go-libp2p-relay-daemon/go.mod ./
 COPY ./init.sh ./
 RUN go build -buildvcs=false -o /app/libp2p-relay-daemon ./cmd/libp2p-relay-daemon
 EXPOSE 6060/tcp
