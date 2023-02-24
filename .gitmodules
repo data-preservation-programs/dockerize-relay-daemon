@@ -1,0 +1,3 @@
+[submodule "go-libp2p-relay-daemon"]
+	path = go-libp2p-relay-daemon
+	url = https://github.com/libp2p/go-libp2p-relay-daemon.git
